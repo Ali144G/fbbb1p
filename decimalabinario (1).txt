@@ -1,0 +1,29 @@
+#include <stdio.h>
+int decimal;
+int a; 
+int conver [10];
+int i=0;
+int Link;
+int binario; 
+int main ()
+
+{
+ 	{
+ 	printf("Programa que convierta de Decimal a Binario\n");
+	printf ("ingrese el valor\n");
+	scanf ("%d",&decimal);
+	}
+ 	while (decimal>0)
+ 	{
+ 	 binario=decimal%2;
+ 	 conver[i]=binario;
+ 	 i++;
+ 	 decimal=decimal/2;
+ 	 Link++;
+	}
+ 	for (a=Link-1;a>-1;a--)
+ 	{
+ 	printf("%d",conver[a]);
+ 	}
+ }
+
